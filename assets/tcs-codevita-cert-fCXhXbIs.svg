@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 700" width="100%" height="100%">
+  <defs>
+    <linearGradient id="tcsHeaderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1c1917"/>
+      <stop offset="100%" stop-color="#0c0a09"/>
+    </linearGradient>
+    <linearGradient id="cornerGreen" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#84cc16"/>
+      <stop offset="100%" stop-color="#65a30d"/>
+    </linearGradient>
+    <linearGradient id="cornerOrange" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f97316"/>
+      <stop offset="100%" stop-color="#ea580c"/>
+    </linearGradient>
+    <linearGradient id="cornerPurple" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3b0764"/>
+      <stop offset="100%" stop-color="#1e1b4b"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Canvas Background -->
+  <rect width="1000" height="700" fill="#ffffff" />
+  
+  <!-- Outer Gold/Bronze Border -->
+  <rect x="15" y="15" width="970" height="670" fill="none" stroke="#b45309" stroke-width="4" />
+
+  <!-- Left Black Pattern Section -->
+  <polygon points="0,0 400,0 400,700 0,700" fill="#18181b" />
+
+  <!-- Decorative Matrix / Code Binary overlay background -->
+  <text x="30" y="40" font-family="monospace" font-size="14" fill="#3f3f46" opacity="0.6">1 0 0 1 0 0 1 1 0 1 0 1 1 0 0 0</text>
+  <text x="30" y="70" font-family="monospace" font-size="14" fill="#3f3f46" opacity="0.6">0 0 1 1 0 1 0 0 0 1 1 1 1 0</text>
+  <text x="30" y="100" font-family="monospace" font-size="14" fill="#3f3f46" opacity="0.6">1 1 0 1 0 1 1 1 1 0 0 1 1 1</text>
+  <text x="30" y="130" font-family="monospace" font-size="14" fill="#3f3f46" opacity="0.6">0 0 0 0 1 0 1 1 1 0 0 0 0 1</text>
+
+  <!-- Left Logo & Title -->
+  <g transform="translate(45, 90)">
+    <text x="0" y="0" font-family="'Segoe UI', Roboto, sans-serif" font-size="44" font-weight="900" fill="#ffffff">tcs CodeVita</text>
+    <text x="245" y="-20" font-family="'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="600" fill="#ffffff">TM</text>
+    <text x="70" y="30" font-family="'Segoe UI', Roboto, sans-serif" font-size="20" font-weight="600" fill="#cbd5e1">Season XII</text>
+  </g>
+
+  <!-- Big Bold RANK CERTIFICATE Text on Left Banner -->
+  <g transform="translate(45, 330)">
+    <text x="0" y="0" font-family="'Segoe UI', Roboto, sans-serif" font-size="54" font-weight="900" fill="#ffffff" letter-spacing="2">RANK</text>
+    <text x="0" y="65" font-family="'Segoe UI', Roboto, sans-serif" font-size="54" font-weight="900" fill="#ffffff" letter-spacing="2">CERTIFICATE</text>
+  </g>
+
+  <!-- Top Right Diagonal Colorful Waves -->
+  <!-- Green Wave -->
+  <path d="M 450,0 Q 650,0 750,130 L 650,200 Q 550,60 450,0 Z" fill="url(#cornerGreen)"/>
+  <!-- Orange Wave -->
+  <path d="M 765,0 L 1000,0 L 1000,195 L 765,195 Z" fill="url(#cornerOrange)" clip-path="polygon(765,0 1000,0 1000,195)"/>
+  <!-- Purple Ribbon -->
+  <path d="M 735,160 L 980,240 L 980,310 L 735,230 Z" fill="url(#cornerPurple)"/>
+
+  <!-- Tata Logo Top Right -->
+  <g transform="translate(900, 45)">
+    <circle cx="20" cy="20" r="22" fill="#030712" />
+    <path d="M 10,12 L 30,12 M 20,12 L 20,28" stroke="#ffffff" stroke-width="4" stroke-linecap="round"/>
+    <text x="20" y="58" font-family="'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="800" fill="#030712" text-anchor="middle" letter-spacing="1">TATA</text>
+  </g>
+
+  <!-- Main Award Content (Right Side) -->
+  <g transform="translate(460, 310)">
+    <text x="0" y="0" font-family="'Segoe UI', Roboto, sans-serif" font-size="28" font-weight="600" fill="#18181b">This certificate is awarded to</text>
+
+    <!-- Winner Name -->
+    <text x="8" y="70" font-family="'Segoe UI', Roboto, sans-serif" font-size="38" font-weight="800" fill="#09090b">Vishwa Venkadachalam</text>
+    <line x1="8" y1="85" x2="440" y2="85" stroke="#16a34a" stroke-width="3"/>
+
+    <!-- Achievement Details -->
+    <text x="8" y="140" font-family="'Segoe UI', Roboto, sans-serif" font-size="20" font-weight="500" fill="#27272a">
+      for securing a global rank of <tspan font-weight="900" fill="#000000" font-size="24">6557</tspan> in
+    </text>
+    <text x="8" y="175" font-family="'Segoe UI', Roboto, sans-serif" font-size="20" font-weight="500" fill="#27272a">
+      TCS CodeVita Season 12 and for showcasing
+    </text>
+    <text x="8" y="210" font-family="'Segoe UI', Roboto, sans-serif" font-size="20" font-weight="500" fill="#27272a">
+      exceptional coding skills
+    </text>
+
+    <!-- Signature -->
+    <g transform="translate(10, 260)">
+      <path d="M 10,25 Q 35,5 60,35 T 110,20 Q 130,40 150,15" fill="none" stroke="#18181b" stroke-width="2.5" stroke-linecap="round"/>
+      <text x="0" y="65" font-family="'Segoe UI', Roboto, sans-serif" font-size="15" font-weight="700" fill="#09090b">Mr. Girish Nandimath</text>
+      <text x="0" y="85" font-family="'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="500" fill="#52525b">Global Head - Talent Acquisition Group and AAG, TCS</text>
+    </g>
+  </g>
+
+</svg>
