@@ -292,6 +292,10 @@ export default function ResumeModal({ isOpen, onClose }) {
                   </li>
                   <li className="flex items-start gap-2">
                     <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0 mt-0.5" />
+                    <span><strong>Horizon Intern: Certificate of Internship</strong> — Completed 5-Week Internship Program (Aug – Sep 2026).</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0 mt-0.5" />
                     <span><strong>TCS CodeVita Season XII Rank Certificate</strong> — Secured Global Rank 6557 in TCS CodeVita Season 12 for showcasing exceptional algorithmic coding skills.</span>
                   </li>
                 </ul>

@@ -144,9 +144,10 @@ export default function SabarChatbot({ onOpenResume, onViewCertificate }) {
       };
     }
 
-    // 7. Nitroware Internship & Experience
+    // 7. Internship & Work Experience
     if (
       q.includes('nitroware') ||
+      q.includes('horizon') ||
       q.includes('internship') ||
       q.includes('intern') ||
       q.includes('work experience') ||
@@ -154,12 +155,13 @@ export default function SabarChatbot({ onOpenResume, onViewCertificate }) {
     ) {
       document.getElementById('experience')?.scrollIntoView({ behavior: 'smooth' });
       return {
-        text: "💼 **Python with Machine Learning Intern**\n" +
-          "**Company**: Nitroware Private Limited\n\n" +
+        text: "💼 **Vishwa's Internship Experience & Certifications**:\n\n" +
+          "1. 🎓 **Horizon Intern: Certificate of Internship** (Aug – Sep 2026)\n" +
+          "• Awarded for completing a 5-Week internship program.\n\n" +
+          "2. 🐍 **Python with Machine Learning Intern** (Nitroware Private Limited)\n" +
           "• Developed machine learning pipelines and predictive models in Python using Scikit-learn and pandas.\n" +
           "• Handled exploratory data analysis, dataset preprocessing, outlier handling, and feature engineering.\n" +
-          "• Trained and evaluated classification and regression algorithms on structured data.\n" +
-          "• Integrated ML inference routines into Python backend scripts for real-world automation.",
+          "• Integrated ML inference routines into Python backend scripts.",
       };
     }
 
