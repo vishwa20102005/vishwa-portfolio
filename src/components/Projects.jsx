@@ -33,6 +33,21 @@ export default function Projects() {
       ],
       color: 'from-emerald-500 to-teal-600',
     },
+    {
+      id: 'ai-employee-onboarding-copilot',
+      title: 'AI Employee Onboarding Copilot',
+      tagline: 'RAG Enterprise Copilot, Policy QA & Personalized 30-60-90 Plan Engine',
+      category: 'AI / LLM Project',
+      tags: ['Python', 'FastAPI', 'Streamlit', 'LangChain', 'Azure OpenAI', 'FAISS', 'PostgreSQL', 'Docker'],
+      summary:
+        'An AI-powered enterprise employee onboarding copilot that helps new hires quickly understand company policies, identify skill gaps, and execute a personalized 30-60-90 day onboarding roadmap powered by RAG and Azure OpenAI.',
+      highlights: [
+        'Architected a RAG chatbot powered by LangChain, Azure OpenAI, and FAISS to query company policy documents with context-aware precision',
+        'Engineered personalized 30-60-90 day onboarding plan generation, automated skill-gap analysis, and AI mentor matching workflows',
+        'Built secure REST APIs with FastAPI, JWT authentication, PostgreSQL via SQLAlchemy, and a Streamlit dashboard packaged with Docker',
+      ],
+      color: 'from-purple-500 to-indigo-600',
+    },
   ];
 
   return (
@@ -49,12 +64,12 @@ export default function Projects() {
             Featured <span className="bg-gradient-to-r from-cyan-400 to-indigo-400 bg-clip-text text-transparent">Technical Projects</span>
           </h2>
           <p className="text-slate-400 text-base leading-relaxed">
-            Real-world technical projects across Large Language Models and Natural Language Processing automation.
+            Real-world technical projects across Enterprise Copilots, Large Language Models, RAG Architectures, and NLP automation.
           </p>
         </div>
 
         {/* Project Cards Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           {projects.map((proj) => (
             <div
               key={proj.id}

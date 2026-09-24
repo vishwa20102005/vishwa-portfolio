@@ -182,7 +182,25 @@ export default function ResumeModal({ isOpen, onClose }) {
                 </h4>
                 <div className="space-y-4 text-xs sm:text-sm">
                   
-                  {/* Project 1 */}
+                  {/* Project 1: Onboarding Copilot */}
+                  <div className="glass-card p-4 rounded-xl border border-white/5 space-y-1.5">
+                    <div className="flex justify-between flex-wrap items-baseline gap-1">
+                      <strong className="text-white text-sm">AI Employee Onboarding Copilot</strong>
+                      <span className="font-mono text-[11px] text-purple-400 bg-purple-950/60 px-2 py-0.5 rounded border border-purple-500/30">
+                        AI / LLM System
+                      </span>
+                    </div>
+                    <div className="text-xs font-mono text-slate-400">
+                      Tech Stack: Python, FastAPI, Streamlit, LangChain, Azure OpenAI, FAISS, PostgreSQL, Docker
+                    </div>
+                    <ul className="list-disc list-inside space-y-1 text-xs text-slate-300 mt-1">
+                      <li>Architected a RAG chatbot using LangChain, Azure OpenAI, and FAISS vector search to query policy documents with high precision.</li>
+                      <li>Engineered automated 30-60-90 day onboarding plan generation, skill-gap analysis, and AI mentor matching workflows.</li>
+                      <li>Built secure REST APIs with FastAPI, JWT authentication, PostgreSQL via SQLAlchemy, and Streamlit packaged with Docker.</li>
+                    </ul>
+                  </div>
+
+                  {/* Project 2 */}
                   <div className="glass-card p-4 rounded-xl border border-white/5 space-y-1.5">
                     <div className="flex justify-between flex-wrap items-baseline gap-1">
                       <strong className="text-white text-sm">AI Code Explainer & Analysis Tool</strong>
@@ -200,7 +218,7 @@ export default function ResumeModal({ isOpen, onClose }) {
                     </ul>
                   </div>
 
-                  {/* Project 2 */}
+                  {/* Project 3 */}
                   <div className="glass-card p-4 rounded-xl border border-white/5 space-y-1.5">
                     <div className="flex justify-between flex-wrap items-baseline gap-1">
                       <strong className="text-white text-sm">AI Email Auto-Responder & Categorizer</strong>
@@ -215,23 +233,6 @@ export default function ResumeModal({ isOpen, onClose }) {
                       <li>Developed an intelligent email processing engine leveraging Natural Language Processing (NLP) to parse, classify, and generate contextually accurate auto-replies.</li>
                       <li>Integrated RESTful API endpoints with cloud serverless functions to automate user communication streams and accelerate query resolution workflows.</li>
                       <li>Constructed database integration using MySQL to securely index message urgency, sentiment scores, and historical interaction logs.</li>
-                    </ul>
-                  </div>
-
-                  {/* Project 3 */}
-                  <div className="glass-card p-4 rounded-xl border border-white/5 space-y-1.5">
-                    <div className="flex justify-between flex-wrap items-baseline gap-1">
-                      <strong className="text-white text-sm">Survivor Detection Enabled IoT Communication Pods</strong>
-                      <span className="font-mono text-[11px] text-purple-400 bg-purple-950/60 px-2 py-0.5 rounded border border-purple-500/30">
-                        Team Project
-                      </span>
-                    </div>
-                    <div className="text-xs font-mono text-slate-400">
-                      Tech Stack: Embedded C/C++, Wireless Sensor Networks, Hardware-Software Integration
-                    </div>
-                    <ul className="list-disc list-inside space-y-1 text-xs text-slate-300 mt-1">
-                      <li>Architected a resilient network pod mapping system optimized to trace isolated entities within signal-compromised disaster zones.</li>
-                      <li>Configured localized transceivers and wireless sensor telemetry to maintain emergency data routing during core infrastructure failures.</li>
                     </ul>
                   </div>
                 </div>

@@ -203,14 +203,26 @@ export default function SabarChatbot({ onOpenResume, onViewCertificate }) {
     if (q.includes('project') || q.includes('what have you built') || q.includes('portfolio work')) {
       document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' });
       return {
-        text: "Here are Vishwa's flagship technical projects:\n\n" +
-          "1. 💡 **AI Code Explainer** (Independent Project)\n" +
+        text: "Here are Vishwa's 3 flagship technical projects:\n\n" +
+          "1. 🚀 **AI Employee Onboarding Copilot** (AI / LLM System)\n" +
+          "• Tech: RAG, LangChain, Azure OpenAI, FAISS, FastAPI, Streamlit, PostgreSQL, Docker\n" +
+          "• Helps new hires navigate company policy documents via RAG QA, generates personalized 30-60-90 day onboarding plans, performs skill-gap analysis, and matches AI mentors.\n\n" +
+          "2. 💡 **AI Code Explainer** (Independent Project)\n" +
           "• Tech: LLMs, Prompt Engineering, Python, AST Analysis\n" +
           "• Deconstructs complex code syntax into plain-English walkthroughs, highlights logic bugs, and auto-generates documentation.\n\n" +
-          "2. ⚡ **AI Email Auto-Responder** (Independent Project)\n" +
+          "3. ⚡ **AI Email Auto-Responder** (Independent Project)\n" +
           "• Tech: NLP, Email Automation, Python, Cloud APIs\n" +
           "• Analyzes incoming messages, classifies intent and urgency with NLP, and generates context-aware draft responses.\n\n" +
           "Ask about any project for more details!",
+      };
+    }
+
+    // AI Employee Onboarding Copilot specific
+    if (q.includes('onboarding') || q.includes('copilot') || q.includes('rag') || q.includes('faiss')) {
+      return {
+        text: "🚀 **AI Employee Onboarding Copilot** (AI / LLM Project)\n\n" +
+          "• **Tech Stack**: Python, FastAPI, Streamlit, LangChain, Azure OpenAI, FAISS Vector Search, PostgreSQL, Docker.\n" +
+          "• **Key Features**: RAG policy document chatbot, automated 30-60-90 day onboarding plan generation, skill-gap analysis engine, AI mentor matching, employee/admin dashboards, and JWT-authenticated REST APIs.",
       };
     }
 

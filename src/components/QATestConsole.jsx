@@ -16,6 +16,11 @@ export default function QATestConsole() {
       duration: 320,
     },
     {
+      name: 'testAIEmployeeOnboardingCopilotRAG()',
+      desc: 'Verify LangChain RAG pipeline, FAISS vector search, and 30-60-90 day plan generator',
+      duration: 420,
+    },
+    {
       name: 'testAICodeExplainerLLMPipeline()',
       desc: 'Dissect code syntax AST and generate readable explanations with LLM prompt chain',
       duration: 440,
