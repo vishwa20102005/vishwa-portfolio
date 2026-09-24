@@ -33,22 +33,6 @@ export default function Projects() {
       ],
       color: 'from-emerald-500 to-teal-600',
     },
-    {
-      id: 'ml-predictive-analytics-pipeline',
-      title: 'ML Predictive Analytics Pipeline',
-      tagline: 'Automated Data Preprocessing & Model Benchmark Framework',
-      category: 'Machine Learning Project',
-      tags: ['Python', 'Scikit-learn', 'Pandas', 'Predictive Modeling', 'Data Pipelines'],
-      summary:
-        'A comprehensive machine learning workflow engineered in Python to automate dataset preprocessing, outlier handling, feature engineering, and model evaluation across structured industry datasets.',
-      highlights: [
-        'Constructed end-to-end data preprocessing pipelines with automated imputation and scaling',
-        'Implemented feature selection and correlation filtering to boost model predictive fidelity',
-        'Trained and benchmarked multiple classification and regression algorithms using Scikit-learn',
-        'Packaged inference routines into modular Python services for rapid evaluation and reporting',
-      ],
-      color: 'from-purple-500 to-indigo-600',
-    },
   ];
 
   return (
@@ -65,12 +49,12 @@ export default function Projects() {
             Featured <span className="bg-gradient-to-r from-cyan-400 to-indigo-400 bg-clip-text text-transparent">Technical Projects</span>
           </h2>
           <p className="text-slate-400 text-base leading-relaxed">
-            Real-world technical projects across Large Language Models, Natural Language Processing, and Machine Learning predictive pipelines.
+            Real-world technical projects across Large Language Models and Natural Language Processing automation.
           </p>
         </div>
 
         {/* Project Cards Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
           {projects.map((proj) => (
             <div
               key={proj.id}

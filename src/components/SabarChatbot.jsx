@@ -203,16 +203,13 @@ export default function SabarChatbot({ onOpenResume, onViewCertificate }) {
     if (q.includes('project') || q.includes('what have you built') || q.includes('portfolio work')) {
       document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' });
       return {
-        text: "Here are Vishwa's 3 flagship projects:\n\n" +
+        text: "Here are Vishwa's flagship technical projects:\n\n" +
           "1. 💡 **AI Code Explainer** (Independent Project)\n" +
           "• Tech: LLMs, Prompt Engineering, Python, AST Analysis\n" +
           "• Deconstructs complex code syntax into plain-English walkthroughs, highlights logic bugs, and auto-generates documentation.\n\n" +
           "2. ⚡ **AI Email Auto-Responder** (Independent Project)\n" +
           "• Tech: NLP, Email Automation, Python, Cloud APIs\n" +
           "• Analyzes incoming messages, classifies intent and urgency with NLP, and generates context-aware draft responses.\n\n" +
-          "3. 📊 **ML Predictive Analytics Pipeline** (Machine Learning Project)\n" +
-          "• Tech: Python, Scikit-learn, Pandas, Predictive Modeling\n" +
-          "• End-to-end automated data preprocessing, outlier handling, and predictive model benchmarking on structured datasets.\n\n" +
           "Ask about any project for more details!",
       };
     }
@@ -232,15 +229,6 @@ export default function SabarChatbot({ onOpenResume, onViewCertificate }) {
         text: "⚡ **AI Email Auto-Responder** (Independent Project)\n\n" +
           "• **Tech Stack**: Natural Language Processing, Email Protocols/APIs, Python, Text Classification.\n" +
           "• **Key Features**: Automatically ingests incoming emails, classifies tone and urgency using NLP, generates smart draft replies, and routes critical inquiries for human approval.",
-      };
-    }
-
-    // ML Predictive Analytics specific
-    if (q.includes('predictive') || q.includes('pipeline') || q.includes('analytics') || q.includes('dataset')) {
-      return {
-        text: "📊 **ML Predictive Analytics Pipeline** (Machine Learning Project)\n\n" +
-          "• **Tech Stack**: Python, Scikit-learn, Pandas, Feature Engineering, NumPy.\n" +
-          "• **Key Features**: Automated data preprocessing, imputation, outlier handling, and cross-validated evaluation across classification and regression models.",
       };
     }
 

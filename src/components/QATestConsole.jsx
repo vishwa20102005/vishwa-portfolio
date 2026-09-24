@@ -26,9 +26,9 @@ export default function QATestConsole() {
       duration: 380,
     },
     {
-      name: 'testMLPredictiveModelEvaluation()',
-      desc: 'Evaluate Scikit-learn classification & regression metrics with cross-validation',
-      duration: 410,
+      name: 'testHorizonWebDevSuite()',
+      desc: 'Verify Web Development virtual internship assignments and UI component architecture',
+      duration: 350,
     },
     {
       name: 'testNitrowareMLDatasetPipeline()',
