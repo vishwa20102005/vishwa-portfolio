@@ -21,10 +21,8 @@ export default function Skills() {
     { name: 'Bootstrap', category: 'prog', level: 'Expert', desc: 'Mobile-first responsive grids, UI components, styling' },
 
     // AI & Machine Learning
-    { name: 'Machine Learning Modeling', category: 'aiml', level: 'Applied', desc: 'Predictive scripts, data preprocessing, engineering test metrics' },
     { name: 'Large Language Models (LLMs)', category: 'aiml', level: 'Applied', desc: 'Syntax dissection, logic explanations, snippet parsing workflows' },
     { name: 'Natural Language Processing (NLP)', category: 'aiml', level: 'Applied', desc: 'Text parsing, email categorization, context-aware auto drafts' },
-    { name: 'Scikit-learn & Predictive Modeling', category: 'aiml', level: 'Applied', desc: 'Classification, regression, cross-validation, and performance evaluation' },
     { name: 'Prompt Engineering & Prompt Chains', category: 'aiml', level: 'Applied', desc: 'Custom system prompts, few-shot conditioning, and structured reasoning' },
     { name: 'Complex Problem-Solving', category: 'aiml', level: 'Competency', desc: 'Algorithmic reasoning, TCS Codevita competitive challenges' },
 
@@ -32,9 +30,6 @@ export default function Skills() {
     { name: 'Azure AI Engineer Associate (AI-102)', category: 'cloud', level: 'Certified', desc: 'Microsoft Certified: Azure AI services, vision, language & NLP solutions' },
     { name: 'Azure AI Fundamentals (AI-900)', category: 'cloud', level: 'Certified', desc: 'Microsoft Certified: Cloud AI concepts, ML workloads, computer vision' },
     { name: 'TCS CodeVita Season 12', category: 'cloud', level: 'Rank 6557', desc: 'Secured Global Rank 6557 in TCS CodeVita Season 12 corporate competitive coding challenge' },
-    { name: 'Git & GitHub', category: 'cloud', level: 'Proficient', desc: 'Source control, code commits, branch collaboration workflows' },
-    { name: 'VS Code & Python Tooling', category: 'cloud', level: 'Expert', desc: 'Virtual environments, debugging, development and terminal workflows' },
-    { name: 'Team Collaboration & Time Mgmt', category: 'cloud', level: 'Core Soft Skill', desc: 'Coordinated technical sprint deliverables and multi-member team deliverables' },
   ];
 
   const filteredSkills = activeTab === 'all'
