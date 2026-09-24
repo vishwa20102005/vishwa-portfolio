@@ -2,18 +2,19 @@ import React from 'react';
 import { Briefcase, Award, Globe, CheckCircle, ShieldCheck, ExternalLink, Eye, Cpu, BookOpen, Layers } from 'lucide-react';
 import azureAiFundamentalsCert from '../assets/azure-ai-fundamentals-cert.svg';
 import tcsCodevitaCert from '../assets/tcs-codevita-cert.svg';
-import horizonInternshipCert from '../assets/horizon-internship-cert.png';
+import horizonWebDevCert from '../assets/horizon-web-dev-internship-cert.png';
 
 export default function Experience({ onViewCertificate }) {
   const certifications = [
     {
-      title: 'Horizon Intern: Certificate of Internship',
-      issuer: 'Horizon Intern',
-      date: 'Aug – Sep 2026',
-      score: 'Completed 5-Week Internship Program (Aug to Sep 2026)',
+      title: 'Horizon Intern: Web Development Internship Certificate',
+      issuer: 'Horizon Intern (ID: HI-CERT-2026-7884)',
+      date: '15 Aug 2026 – 15 Sep 2026',
+      score: 'Virtual Internship Program in Web Development (Issued 15 Sep 2026)',
       highlight: true,
-      badge: 'Horizon Intern',
-      image: horizonInternshipCert,
+      badge: 'HI-CERT-2026-7884',
+      validationId: 'HI-CERT-2026-7884',
+      image: horizonWebDevCert,
     },
     {
       title: 'Microsoft Certified: Azure AI Engineer Associate',
@@ -101,55 +102,129 @@ export default function Experience({ onViewCertificate }) {
             Experience & <span className="bg-gradient-to-r from-cyan-400 to-indigo-400 bg-clip-text text-transparent">Certifications</span>
           </h2>
           <p className="text-slate-400 text-base leading-relaxed">
-            Hands-on machine learning internship, industry cloud certifications from Microsoft, and core engineering competencies.
+            Hands-on Web Development & Machine Learning internships, industry cloud certifications from Microsoft, and core engineering competencies.
           </p>
         </div>
 
-        {/* 1. Industry Experience Feature Card */}
-        <div className="glass-card rounded-3xl border border-emerald-500/30 p-8 mb-16 relative overflow-hidden group">
-          <div className="absolute top-0 right-0 w-64 h-64 bg-emerald-500/10 rounded-full blur-3xl pointer-events-none" />
+        {/* 1. Industry Experience Feature Cards */}
+        <div className="space-y-8 mb-16">
+          {/* Horizon Intern Experience Card */}
+          <div className="glass-card rounded-3xl border border-cyan-500/30 p-8 relative overflow-hidden group">
+            <div className="absolute top-0 right-0 w-64 h-64 bg-cyan-500/10 rounded-full blur-3xl pointer-events-none" />
 
-          <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 pb-6 border-b border-white/10">
-            <div>
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-950/80 border border-emerald-500/40 text-emerald-300 text-xs font-mono mb-2">
-                <ShieldCheck className="w-3.5 h-3.5 text-emerald-400" />
-                <span>INTERNSHIP EXPERIENCE</span>
+            <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 pb-6 border-b border-white/10">
+              <div>
+                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-950/80 border border-cyan-500/40 text-cyan-300 text-xs font-mono mb-2">
+                  <ShieldCheck className="w-3.5 h-3.5 text-cyan-400" />
+                  <span>INTERNSHIP EXPERIENCE</span>
+                </div>
+                <h3 className="text-2xl font-bold text-white font-heading">
+                  Web Development Intern
+                </h3>
+                <p className="text-base text-cyan-400 font-semibold mt-0.5">
+                  Horizon Intern
+                </p>
               </div>
-              <h3 className="text-2xl font-bold text-white font-heading">
-                Python with ML Intern
-              </h3>
-              <p className="text-base text-cyan-400 font-semibold mt-0.5">
-                Nitroware Private Limited
-              </p>
+              <div className="text-left md:text-right font-mono">
+                <span className="text-xs text-slate-400 block">Duration</span>
+                <span className="text-sm font-semibold text-white bg-slate-800/80 px-3 py-1.5 rounded-lg border border-slate-700">
+                  15 Aug 2026 – 15 Sep 2026
+                </span>
+                <span className="text-[10px] text-cyan-400 block mt-1">
+                  Cert ID: HI-CERT-2026-7884
+                </span>
+              </div>
             </div>
-            <div className="text-left md:text-right font-mono">
-              <span className="text-xs text-slate-400 block">Domain</span>
-              <span className="text-sm font-semibold text-white bg-slate-800/80 px-3 py-1.5 rounded-lg border border-slate-700">
-                Machine Learning & Python
-              </span>
+
+            <div className="mt-6 space-y-4 text-sm text-slate-300 leading-relaxed">
+              <p>
+                Successfully completed the <strong>Virtual Internship program at Horizon Intern</strong> in the field of <strong>Web Development</strong>, demonstrating technical proficiency and a proactive approach toward assigned industry-level projects:
+              </p>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-3 pt-2 text-xs font-mono">
+                <div className="flex items-start gap-2.5 p-3 rounded-xl bg-slate-900/50 border border-white/5">
+                  <CheckCircle className="w-4 h-4 text-cyan-400 shrink-0 mt-0.5" />
+                  <span>Engineered responsive web interfaces and frontend solutions during the 1-month intensive program</span>
+                </div>
+                <div className="flex items-start gap-2.5 p-3 rounded-xl bg-slate-900/50 border border-white/5">
+                  <CheckCircle className="w-4 h-4 text-cyan-400 shrink-0 mt-0.5" />
+                  <span>Demonstrated high technical proficiency and proactive problem solving across industry-level projects</span>
+                </div>
+                <div className="flex items-start gap-2.5 p-3 rounded-xl bg-slate-900/50 border border-white/5">
+                  <CheckCircle className="w-4 h-4 text-cyan-400 shrink-0 mt-0.5" />
+                  <span>Official Certificate Issued: <strong>15 Sep 2026</strong> (Verification ID: <strong>HI-CERT-2026-7884</strong>)</span>
+                </div>
+                <div className="flex items-start gap-2.5 p-3 rounded-xl bg-slate-900/50 border border-white/5">
+                  <CheckCircle className="w-4 h-4 text-cyan-400 shrink-0 mt-0.5" />
+                  <span>Applied modern web technologies, UI component architecture, and clean code practices</span>
+                </div>
+              </div>
+              {onViewCertificate && (
+                <div className="pt-2">
+                  <button
+                    onClick={() => onViewCertificate({
+                      title: 'Horizon Intern: Web Development Internship Certificate',
+                      issuer: 'Horizon Intern (ID: HI-CERT-2026-7884)',
+                      date: '15 Aug 2026 – 15 Sep 2026',
+                      score: 'Virtual Internship Program in Web Development (Issued 15 Sep 2026)',
+                      badge: 'HI-CERT-2026-7884',
+                      image: horizonWebDevCert,
+                    })}
+                    className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-cyan-950/80 border border-cyan-500/40 text-cyan-300 text-xs font-mono font-semibold hover:bg-cyan-900 transition-all cursor-pointer"
+                  >
+                    <Eye className="w-3.5 h-3.5 text-cyan-400" />
+                    <span>View Official Internship Certificate Proof</span>
+                  </button>
+                </div>
+              )}
             </div>
           </div>
 
-          <div className="mt-6 space-y-4 text-sm text-slate-300 leading-relaxed">
-            <p>
-              Completed an applied Machine Learning internship focused on developing practical data pipelines, dataset engineering, and predictive model training:
-            </p>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-3 pt-2 text-xs font-mono">
-              <div className="flex items-start gap-2.5 p-3 rounded-xl bg-slate-900/50 border border-white/5">
-                <CheckCircle className="w-4 h-4 text-emerald-400 shrink-0 mt-0.5" />
-                <span>Acquired hands-on exposure applying <strong>Python frameworks</strong> and <strong>Machine Learning modeling concepts</strong> to dataset operations</span>
+          {/* Nitroware Experience Card */}
+          <div className="glass-card rounded-3xl border border-emerald-500/30 p-8 relative overflow-hidden group">
+            <div className="absolute top-0 right-0 w-64 h-64 bg-emerald-500/10 rounded-full blur-3xl pointer-events-none" />
+
+            <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 pb-6 border-b border-white/10">
+              <div>
+                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-950/80 border border-emerald-500/40 text-emerald-300 text-xs font-mono mb-2">
+                  <ShieldCheck className="w-3.5 h-3.5 text-emerald-400" />
+                  <span>INTERNSHIP EXPERIENCE</span>
+                </div>
+                <h3 className="text-2xl font-bold text-white font-heading">
+                  Python with ML Intern
+                </h3>
+                <p className="text-base text-cyan-400 font-semibold mt-0.5">
+                  Nitroware Private Limited
+                </p>
               </div>
-              <div className="flex items-start gap-2.5 p-3 rounded-xl bg-slate-900/50 border border-white/5">
-                <CheckCircle className="w-4 h-4 text-emerald-400 shrink-0 mt-0.5" />
-                <span>Collaborated on building, training, and troubleshooting <strong>predictive scripts</strong> to align data metrics with engineering test workflows</span>
+              <div className="text-left md:text-right font-mono">
+                <span className="text-xs text-slate-400 block">Domain</span>
+                <span className="text-sm font-semibold text-white bg-slate-800/80 px-3 py-1.5 rounded-lg border border-slate-700">
+                  Machine Learning & Python
+                </span>
               </div>
-              <div className="flex items-start gap-2.5 p-3 rounded-xl bg-slate-900/50 border border-white/5">
-                <CheckCircle className="w-4 h-4 text-emerald-400 shrink-0 mt-0.5" />
-                <span>Designed modular data preprocessing functions for data cleaning, transformation, and performance verification</span>
-              </div>
-              <div className="flex items-start gap-2.5 p-3 rounded-xl bg-slate-900/50 border border-white/5">
-                <CheckCircle className="w-4 h-4 text-emerald-400 shrink-0 mt-0.5" />
-                <span>Coordinated with engineering peers to ensure data fidelity and predictive script reproducibility</span>
+            </div>
+
+            <div className="mt-6 space-y-4 text-sm text-slate-300 leading-relaxed">
+              <p>
+                Completed an applied Machine Learning internship focused on developing practical data pipelines, dataset engineering, and predictive model training:
+              </p>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-3 pt-2 text-xs font-mono">
+                <div className="flex items-start gap-2.5 p-3 rounded-xl bg-slate-900/50 border border-white/5">
+                  <CheckCircle className="w-4 h-4 text-emerald-400 shrink-0 mt-0.5" />
+                  <span>Acquired hands-on exposure applying <strong>Python frameworks</strong> and <strong>Machine Learning modeling concepts</strong> to dataset operations</span>
+                </div>
+                <div className="flex items-start gap-2.5 p-3 rounded-xl bg-slate-900/50 border border-white/5">
+                  <CheckCircle className="w-4 h-4 text-emerald-400 shrink-0 mt-0.5" />
+                  <span>Collaborated on building, training, and troubleshooting <strong>predictive scripts</strong> to align data metrics with engineering test workflows</span>
+                </div>
+                <div className="flex items-start gap-2.5 p-3 rounded-xl bg-slate-900/50 border border-white/5">
+                  <CheckCircle className="w-4 h-4 text-emerald-400 shrink-0 mt-0.5" />
+                  <span>Designed modular data preprocessing functions for data cleaning, transformation, and performance verification</span>
+                </div>
+                <div className="flex items-start gap-2.5 p-3 rounded-xl bg-slate-900/50 border border-white/5">
+                  <CheckCircle className="w-4 h-4 text-emerald-400 shrink-0 mt-0.5" />
+                  <span>Coordinated with engineering peers to ensure data fidelity and predictive script reproducibility</span>
+                </div>
               </div>
             </div>
           </div>

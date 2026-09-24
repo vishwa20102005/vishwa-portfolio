@@ -242,15 +242,28 @@ export default function ResumeModal({ isOpen, onClose }) {
                 <h4 className="text-xs font-mono uppercase tracking-wider text-cyan-400 font-bold border-b border-white/10 pb-1 mb-3">
                   Internship Experience
                 </h4>
-                <div className="glass-card p-4 rounded-xl border border-white/5 space-y-1.5">
-                  <div className="flex justify-between items-baseline flex-wrap gap-1">
-                    <strong className="text-sm text-white">Python with ML Intern</strong>
-                    <span className="font-mono text-xs text-emerald-400">Nitroware Private Limited</span>
+                <div className="space-y-3">
+                  <div className="glass-card p-4 rounded-xl border border-white/5 space-y-1.5">
+                    <div className="flex justify-between items-baseline flex-wrap gap-1">
+                      <strong className="text-sm text-white">Web Development Intern</strong>
+                      <span className="font-mono text-xs text-cyan-400">Horizon Intern (15 Aug 2026 – 15 Sep 2026)</span>
+                    </div>
+                    <ul className="list-disc list-inside space-y-1 text-xs text-slate-300 leading-relaxed mt-1">
+                      <li>Completed Virtual Internship program in Web Development demonstrating proactive approach and technical proficiency on industry-level web projects.</li>
+                      <li>Official Certificate Verification ID: <strong>HI-CERT-2026-7884</strong> (Issued 15 Sep 2026).</li>
+                    </ul>
                   </div>
-                  <ul className="list-disc list-inside space-y-1 text-xs text-slate-300 leading-relaxed mt-1">
-                    <li>Applied Python frameworks and Machine Learning modeling concepts to complete dataset processing and transformation tasks.</li>
-                    <li>Collaborated with engineering teams to write, train, and troubleshoot predictive Python scripts aligned with automated testing metrics.</li>
-                  </ul>
+
+                  <div className="glass-card p-4 rounded-xl border border-white/5 space-y-1.5">
+                    <div className="flex justify-between items-baseline flex-wrap gap-1">
+                      <strong className="text-sm text-white">Python with ML Intern</strong>
+                      <span className="font-mono text-xs text-emerald-400">Nitroware Private Limited</span>
+                    </div>
+                    <ul className="list-disc list-inside space-y-1 text-xs text-slate-300 leading-relaxed mt-1">
+                      <li>Applied Python frameworks and Machine Learning modeling concepts to complete dataset processing and transformation tasks.</li>
+                      <li>Collaborated with engineering teams to write, train, and troubleshoot predictive Python scripts aligned with automated testing metrics.</li>
+                    </ul>
+                  </div>
                 </div>
               </div>
 
