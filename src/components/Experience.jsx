@@ -2,19 +2,19 @@ import React from 'react';
 import { Briefcase, Award, Globe, CheckCircle, ShieldCheck, ExternalLink, Eye, Cpu, BookOpen, Layers } from 'lucide-react';
 import azureAiFundamentalsCert from '../assets/azure-ai-fundamentals-cert.svg';
 import tcsCodevitaCert from '../assets/tcs-codevita-cert.svg';
+import horizonInternshipCert from '../assets/horizon-internship-cert.png';
 import horizonWebDevCert from '../assets/horizon-web-dev-internship-cert.png';
 
 export default function Experience({ onViewCertificate }) {
   const certifications = [
     {
-      title: 'Horizon Intern: Web Development Internship Certificate',
-      issuer: 'Horizon Intern (ID: HI-CERT-2026-7884)',
-      date: '15 Aug 2026 – 15 Sep 2026',
-      score: 'Virtual Internship Program in Web Development (Issued 15 Sep 2026)',
+      title: 'Horizon Intern: Certificate of Internship',
+      issuer: 'Horizon Intern',
+      date: 'Aug – Sep 2026',
+      score: '5-Week Internship Certificate (Aug to Sep 2026)',
       highlight: true,
-      badge: 'HI-CERT-2026-7884',
-      validationId: 'HI-CERT-2026-7884',
-      image: horizonWebDevCert,
+      badge: 'Horizon Intern',
+      image: horizonInternshipCert,
     },
     {
       title: 'Microsoft Certified: Azure AI Engineer Associate',
